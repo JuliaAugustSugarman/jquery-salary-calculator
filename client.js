@@ -31,13 +31,20 @@ $('#newEmployeeRow').append( `<tr><td>`
 $('.clearInputFields').val('');
 
 //annual costs equations
-annualCosts = annualCosts + annualSalary;
+annualCosts += Number(annualSalary);
+console.log('this is the annual cost', annualCosts);
+
+
 console.log('annualCosts equation');
 //monthly costs
-monthlyCosts = annualCosts/12;
+monthlyCosts = Number(annualCosts/12);
 console.log('monthly costs');
 
-
+$('#monthlyCalculator').text(monthlyCosts);
+if (monthlyCosts > 20000){
+    console.log('Monthly Cost:', monthlyCosts);
+    
+}//end if statement
 
 
 
