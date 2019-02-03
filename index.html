@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Jquery-Salary-Calculator</title>
+    <script src="jQuery.js"></script>
+    <script src="client.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 75%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <h1>COMPANY SALARY CALCULATOR</h1>
+    <input type="text" placeholder="First Name" id="firstName" class="clearInputFields">
+    <input type="text" placeholder="Last Name" id="lastName" class="clearInputFields">
+    <input type="text" placeholder="ID Number" id="idNumber" class="clearInputFields">
+    <input type="text" placeholder="Job Title" id="jobTitle" class="clearInputFields">
+    <input type="text" placeholder="Annual Salary" id="annualSalary" class="clearInputFields">
+    <button id="employeeSubmitButton"> Submit Employee </button>
+    <br>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Employee First Name</th>
+                <th>Employee Last Name</th>
+                <th>Employee ID Number</th>
+                <th>Job Title </th>
+                <th>Annual Salary </th>
+            </tr>
+        </thead>
+        <tbody id="newEmployeeRow" class ="newEmployeeRow">
+            <tr>
+                <td>Ronda</td>
+                <td>Wakes</td>
+                <td>6741</td>
+                <td>Project Manager</td>
+                <td>$40,000</td>
+            </tr>
+            <tr>
+                <td>Elsa</td>
+                <td>Chang</td>
+                <td>6742</td>
+                <td>Lead Accountant</td>
+                <td>$65,000</td>
+            </tr>
+            <tr>
+                <td>Ernest</td>
+                <td>Randolph</td>
+                <td>8791</td>
+                <td>HR Manager</td>
+                <td>$55,000</td>
+            </tr>
+        </tbody>
+
+
+    </table>
+
+
+</body>
+
+</html>
